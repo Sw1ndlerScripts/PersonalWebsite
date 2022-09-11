@@ -1,38 +1,57 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+html {
+  background-image: url("background.png");
+  background-position: relative;
+}
+
+body {
+  color: white;
+  font-family: 'Poiret One', cursive;
+  font-size: 2em;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 180px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.pfp {
+  /* position: absolute; */
+  /* transform: translate(-45%, -50%); */
+  border-radius: 50%;
+  margin-top: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.heyThere {
+  font-weight: normal;
+  margin-block-start: 0;
+  margin-bottom: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.im {
+  font-size: 2em;
+  font-weight: normal;
+  font-family: 'Poiret One', cursive;
+}
+
+code {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 0;
+  flex-direction: row;
+}
+.cursor {
+  /* opacity: var(--opacity); */
+  opacity: 0;
+  animation: fade 0.8s linear infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fade {
+  0%, 100% {
+      opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+      opacity: 1;
   }
 }
