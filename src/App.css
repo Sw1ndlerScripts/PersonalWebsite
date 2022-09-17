@@ -40,7 +40,7 @@ body {
 
 .imWord.Animate {
   text-shadow: 0px 0px 5px yellow, 0px 0px 5px yellow;
-  animation: fadeAlt 0.8s forwards cubic-bezier(0.1, -0.6, 0.2, 0) 0.3s,
+  animation: fadeAlt 0.8s forwards cubic-bezier(0.1, -0.6, 0.2, 0) 0.4s,
               fade 0.15s linear 2;
 
   font-weight: bolder;
